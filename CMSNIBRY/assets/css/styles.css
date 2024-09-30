@@ -1,0 +1,941 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: #ecf0f1;
+    flex-shrink: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Main Content */
+.dashboard-content {
+    flex-grow: 1;
+    padding: 2em;
+    background-color: #f4f4f9;
+    
+}
+
+.dashboard-content h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dashboard-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Sports Section */
+.sports-section {
+    background-color: #e8f4f8;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+}
+
+/* News Section */
+.news-section {
+    background-color: #f9f8e8;
+    padding: 20px;
+    border-left: 5px solid #f39c12;
+}
+
+/* Anime Section */
+.anime-section {
+    background-color: #fce8f4;
+    padding: 20px;
+    border-left: 5px solid #e74c3c;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5em; /* Reduce padding */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px; /* Reduce height */
+}
+
+
+/* Gaming Section */
+.gaming-section {
+    background-color: #f0e8fc;
+    padding: 20px;
+    border-left: 5px solid #8e44ad;
+}
+.gaming-section h2 {
+    color: #8e44ad;
+}
+
+
+/* Category Management Styles */
+.form-category {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-category label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-category input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-category .btn-add {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-category .btn-add:hover {
+    background-color: #2980b9;
+}
+
+/* Category List */
+.category-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-item {
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-item:hover {
+    background-color: #dfe6e9;
+}
+
+/* Main content */
+.dashboard-content h1, .dashboard-content h2 {
+    color: #2c3e50;
+}
+
+.dashboard-content h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.dashboard-content h2 {
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+/* Content Management Styles */
+.form-content {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-content label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-content input[type="text"],
+.form-content textarea,
+.form-content select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-content .btn-add,
+.form-content .btn-update {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-content .btn-add:hover,
+.form-content .btn-update:hover {
+    background-color: #2980b9;
+}
+
+/* Content Table */
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.content-table th,
+.content-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.content-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.content-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content-table tr:hover {
+    background-color: #e1e1e1;
+}
+
+.content-table .btn-edit,
+.content-table .btn-delete {
+    color: #3498db;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.content-table .btn-edit:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.content-table .btn-delete:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* General Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1, h2 {
+    color: #080808;
+}
+
+/* Forms */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for authentication pages */
+.auth-body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.auth-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.auth-container h1 {
+    margin-bottom: 1em;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    margin: 0.5em 0 0.2em;
+    text-align: left;
+}
+
+.auth-container input {
+    margin-bottom: 1em;
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.auth-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.7em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-container button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 1em;
+}
+
+/* Home Dashboard specific styles */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.category-item p {
+    color: #555;
+}
+
+.category-item .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.category-item .btn:hover {
+    background-color: #005bb5;
+}
+
+
+/* General body and container styles */
+.user-profile-body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.sidebar-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar-menu a:hover {
+    background-color: #575757;
+}
+
+/* Main content styles */
+.profile-content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2c3e50;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-username {
+    font-size: 22px;
+    color: #555;
+}
+
+.profile-details {
+    margin: 20px 0;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #333;
+}
+
+.profile-actions {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #0066cc;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+.btn-logout {
+    background-color: #cc0000;
+}
+
+.btn-logout:hover {
+    background-color: #a30000;
+}
+
+/* Unique class for user profile dashboard */
+.user-dashboard {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Unique class for sidebar */
+.user-sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    padding: 15px;
+    float: left;
+    height: 100vh;
+}
+
+.user-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-sidebar ul li {
+    margin: 10px 0;
+}
+
+.user-sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Unique class for form */
+.user-form {
+    margin-left: 270px; /* Adjusted to account for sidebar width */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.user-form h1 {
+    color: #333;
+}
+
+.user-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.user-form input[type="text"],
+.user-form input[type="email"],
+.user-form input[type="password"],
+.user-form input[type="file"],
+.user-form textarea,
+.user-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.user-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+.user-form button:hover {
+    background-color: #218838;
+}
+
+
+/* Search Results Page */
+.search-results-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.search-results-header {
+    margin-bottom: 20px;
+}
+
+.search-results-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.search-results-header h1 span {
+    color: #3498db;
+}
+
+.search-results-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-result-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-link {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 18px;
+}
+
+.search-result-link:hover {
+    text-decoration: underline;
+}
+
+.search-results-content p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Updated styles for the search page */
+
+.user-search-body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.user-search-results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.user-search-results-header {
+    margin-bottom: 20px;
+}
+
+.user-search-results-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.user-search-results-header span {
+    color: #007bff;
+}
+
+.user-search-results-content {
+    width: 100%;
+    max-width: 800px;
+}
+
+.user-search-results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-search-result-item:last-child {
+    border-bottom: none;
+}
+
+.user-search-result-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.user-search-result-link:hover {
+    text-decoration: underline;
+}
+
+.user-search-results-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* General body styles */
+.login-body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-form input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-top: 1rem;
+}
+
+
+
+ /* search button */
+ .user-search-form {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #ccc;
+    border-radius: 5px; */
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.user-search-input {
+    flex-grow: 1;
+    padding: 5px; /* Adjust the padding to make the input height match the button */
+    border: none;
+    font-size: 16px;
+    height: 10px; /* Set a fixed height */
+}
+
+.user-search-button {
+    background-color: #007bff;
+    border: none;
+    padding: 0 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; /* Set the same height as the input */
+}
+
+.user-search-button i {
+    color: white;
+}
+
+.user-search-button:hover {
+    background-color: #0056b3;
+}
+
+.user-search-input:focus {
+    outline: none;
+}
+
